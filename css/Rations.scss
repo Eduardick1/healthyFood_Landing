@@ -1,0 +1,67 @@
+@import "./vars";
+
+.rations {
+  margin-bottom: 137px;
+  &_title {
+    margin-bottom: 40px;
+    @media (max-width: 1200px) {
+      text-align: center;
+    }
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    place-content: center center;
+    place-items: center center;
+    gap: 20px;
+    &__card {
+      max-width: 280px;
+      &_image {
+        width: 280px;
+        height: 280px;
+        border-radius: $imgBorderRadius;
+        overflow: hidden;
+        margin-bottom: 18px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      &_desc {
+        font-size: 14px;
+        text-align: left;
+        margin: 17px 0 12px;
+      }
+      &_subdesc {
+        font-size: 14px;
+        color: $secondaryTextColor;
+        margin-bottom: 11px;
+      }
+      &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      &_price {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      &_button {
+        width: 136px;
+        height: 35px;
+      }
+    }
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(2, 280px);
+    }
+    @media (max-width: 580px) {
+      grid-template-columns: repeat(1, 1fr);
+      place-content: center center;
+      margin: 0 auto;
+      &_image {
+        width: 100%;
+      }
+    }
+  }
+}
