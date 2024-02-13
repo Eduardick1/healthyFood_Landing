@@ -1,5 +1,5 @@
 const swiper = new Swiper(".swiper-container", {
-  // Optional parameters
+
 
   slidesPerView: 1,
   centeredSlides: true,
@@ -7,22 +7,17 @@ const swiper = new Swiper(".swiper-container", {
   autoplay: {
     delay: 3000,
   },
-  // If we need pagination
+ 
   pagination: {
     el: ".hero__pagination",
     type: "bullets",
   },
 
-  // Navigation arrows
+  
   navigation: {
     nextEl: ".hero-btn-next",
     prevEl: ".hero-btn-prev",
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
+  }
 });
 
 const menu = document.querySelector(".header__bottom");
