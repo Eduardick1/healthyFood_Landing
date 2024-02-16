@@ -65,7 +65,8 @@ document.querySelector(".modal__form_submit").addEventListener("click", (e) => {
 });
 
 IMask(document.getElementById("phoneInput"), {
-  mask: "+{7}(000)000-00-00",
+  mask: "+7(000)000-00-00",
+  lazy: false
 });
 
 
