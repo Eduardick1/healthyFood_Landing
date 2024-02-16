@@ -63,3 +63,9 @@ document.querySelector(".modal__form_submit").addEventListener("click", (e) => {
     <p class="modal_text finished">Ваша заявка успешно отправлена</p>
     <button onclick="toggleOpen('modal')" class="modal_button btn" type="submit">Закрыть</button>`;
 });
+
+IMask(document.getElementById("phoneInput"), {
+  mask: "+{7}(000)000-00-00",
+});
+
+
